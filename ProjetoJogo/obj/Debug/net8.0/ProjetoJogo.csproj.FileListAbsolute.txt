@@ -126,3 +126,4 @@ C:\Users\filip\OneDrive\Área de Trabalho\desenvolvimento de software visual\Pro
 C:\Users\filip\OneDrive\Área de Trabalho\desenvolvimento de software visual\Projeto jogo\ProjetoJogo\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\filip\OneDrive\Área de Trabalho\desenvolvimento de software visual\Projeto jogo\ProjetoJogo\obj\Debug\net8.0\ProjetoJogo.csproj.AssemblyReference.cache
 C:\Users\filip\OneDrive\Área de Trabalho\desenvolvimento de software visual\Projeto jogo\ProjetoJogo\obj\Debug\net8.0\ProjetoJ.B07F825A.Up2Date
+C:\Users\filip\OneDrive\Área de Trabalho\desenvolvimento de software visual\Projeto jogo\ProjetoJogo\obj\Debug\net8.0\ProjetoJogo.sourcelink.json

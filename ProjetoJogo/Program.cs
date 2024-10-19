@@ -1,22 +1,48 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-// Página inicial
+// Rota inicial que retorna um HTML simples
 app.MapGet("/", () => 
-    "Jogo - Escolhas do destino\n\n" +
-    "Explicação do jogo: O jogo consiste em uma escolha de opções conforme a história " +
-    "vai se desenvolvendo, o que resulta no destino final do jogador, cada escolha tem uma consequência.\n\n" +
-    "Escolha uma opção:\n" +
-    "1. [Opção 1](http://localhost:5000/opcao1)\n" +
-    "2. [Opção 2](http://localhost:5000/opcao2)"
-);
+{
+    var html = @"
+    <!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Minha Aplicação ASP.NET</title>
+</head>
+<body>
+    <h1>Bem-vindo à Minha Aplicação!</h1>
+            <p>Digite um valor para B:</p>
+            <form action='/capturar' method='post'>
+                <input type='number' name='valor' required>
+                <button type='submit'>Enviar</button>
+            </form>
+</body>
+</html>";
+    return Results.Text(html, "text/html"); // Retorna o HTML com o tipo de conteúdo correto
+});
 
-// Rota para a Opção 1
-app.MapGet("/opcao1", () => 
-    "Você escolheu a Opção 1! Agora, a história segue esse caminho...");
-
-// Rota para a Opção 2
-app.MapGet("/opcao2", () => 
-    "Você escolheu a Opção 2! Agora, a história segue esse caminho...");
+// Endpoint para capturar o valor
+app.MapPost("/capturar", async (HttpContext context) =>
+{
+    var formData = await context.Request.ReadFormAsync();
+    if (formData.ContainsKey("valor"))
+    {
+        if (int.TryParse(formData["valor"], out int valor))
+        {
+            return Results.Text($"Valor {valor} capturado com sucesso!", "text/html"); // Retorna a resposta como HTML
+        }
+        else
+        {
+            return Results.Text("Por favor, insira um número válido.", "text/html");
+        }
+    }
+    return Results.Text("Valor não fornecido.", "text/html");
+});
 
 app.Run();
