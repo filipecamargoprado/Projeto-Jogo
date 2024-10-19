@@ -1,10 +1,7 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-// Rota inicial que retorna um HTML simples
+
 app.MapGet("/", () => 
 {
     var html = @"
@@ -16,18 +13,20 @@ app.MapGet("/", () =>
     <title>Minha Aplicação ASP.NET</title>
 </head>
 <body>
-    <h1>Bem-vindo à Minha Aplicação!</h1>
-            <p>Digite um valor para B:</p>
+    <h1>Jogo - Escolhas do Destino</h1>
+    <h3> Explicação: O jogo consiste na escolha de diferentes opções que resultam em diferentes finais.</h3> 
+    <p> Opção 1: </p> 
+    <p> Opção 2: </p> 
+            <p>Digite o número da opção escolhida:</p>
             <form action='/capturar' method='post'>
                 <input type='number' name='valor' required>
                 <button type='submit'>Enviar</button>
             </form>
 </body>
 </html>";
-    return Results.Text(html, "text/html"); // Retorna o HTML com o tipo de conteúdo correto
+    return Results.Text(html, "text/html"); 
 });
 
-// Endpoint para capturar o valor
 app.MapPost("/capturar", async (HttpContext context) =>
 {
     var formData = await context.Request.ReadFormAsync();
@@ -35,14 +34,29 @@ app.MapPost("/capturar", async (HttpContext context) =>
     {
         if (int.TryParse(formData["valor"], out int valor))
         {
-            return Results.Text($"Valor {valor} capturado com sucesso!", "text/html"); // Retorna a resposta como HTML
-        }
-        else
-        {
-            return Results.Text("Por favor, insira um número válido.", "text/html");
+            if (valor == 1)
+            {
+                context.Response.Redirect("/opcao1");
+            }
+            else if (valor == 2)
+            {
+                context.Response.Redirect("/opcao2");
+            }
+            else
+            {
+                context.Response.Redirect("/opcaoDefault"); 
+            }
+            return; 
         }
     }
-    return Results.Text("Valor não fornecido.", "text/html");
 });
+
+// Rota para a Opção 1
+app.MapGet("/opcao1", () => 
+    "Você foi redirecionado para a Opção 1!");
+
+// Rota para a Opção 2
+app.MapGet("/opcao2", () => 
+    "Você foi redirecionado para a Opção 2!");
 
 app.Run();
