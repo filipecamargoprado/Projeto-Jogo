@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\AppdbContext.cs" />
+    <Compile Remove="Models\CenarioFinalBom.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Models\AppdbContext.cs" />
+    <None Include="Models\CenarioFinalBom.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>

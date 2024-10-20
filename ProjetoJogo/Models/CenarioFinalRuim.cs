@@ -4,15 +4,16 @@ using API.Models;
 
 namespace API.Models
 {
-    public class Cenario4
+    public class CenarioFinalRuim  
     {
         public string Descricao { get; set; }
         public string Opcao1 { get; set; }
 
-        public Cenario4()
+        public CenarioFinalRuim()
         {
-            Descricao = "Você arromba a porta e é pego desprevinido por um monstro";
-            Opcao1 = "Tentar fugir";
+            Descricao = "Você escolhe ir a nave ou não?";
+            Opcao1 = "Ir a nave!";
+
         }
 
         public string EscolherOpcao(string escolha)
@@ -28,8 +29,8 @@ namespace API.Models
     <title>Minha Aplicação ASP.NET</title>
 </head>
 <body>
-<p>Nada acontece.</p>
-            <form action='/cenariofinalruim' method='get'>
+<p>Você chega a nave, entretanto quando a nave decola e todas as pessoas chegam até o espaço, você vira um daqueles monstros e mata a todos que estão na nave acabando assim com toda a população humana.</p>
+            <form action='' method='get'>
             <button type='submit'>Continuar jogo</button>
         </form>    
 </body>
