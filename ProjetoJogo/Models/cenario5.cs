@@ -4,15 +4,15 @@ using API.Models;
 
 namespace API.Models
 {
-    public class Cenario4
+    public class Cenario5
     {
         public string Descricao { get; set; }
         public string Opcao1 { get; set; }
 
-        public Cenario4()
+        public Cenario5()
         {
-            Descricao = "Você arromba a porta e é pego desprevinido por um monstro";
-            Opcao1 = "Tentar fugir";
+            Descricao = "Você silenciosamente entra em uma casa abandonada onde encontra uma barra de ferro e encontra um monstro que está preste a te atacar";
+            Opcao1 = "Executar monstro";
         }
 
         public string EscolherOpcao(string escolha)
@@ -29,7 +29,7 @@ namespace API.Models
 </head>
 <body>
 <p>Nada acontece.</p>
-            <form action='/cenariofinalruim' method='get'>
+            <form action='' method='get'>
             <button type='submit'>Continuar jogo</button>
         </form>    
 </body>
