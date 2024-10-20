@@ -12,7 +12,7 @@ namespace API.Models
 
         public Cenario2()
         {
-            Descricao = " Voce estava desmaiado por algum tempo desconhecido, não sabe se dizer ao certo quanto tempo se passou desde que ocorrera o desmaio e então, você escuta o barulho de alguma coisa se aproximando:";
+            Descricao = "Voce estava desmaiado por algum tempo desconhecido, não sabe se dizer ao certo quanto tempo se passou desde que ocorrera o desmaio e então, você escuta o barulho de alguma coisa se aproximando:";
             Opcao1 = "Se esconder";
             Opcao2 = "Gritar por ajuda";
         }
