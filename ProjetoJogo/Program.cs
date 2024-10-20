@@ -7,15 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 builder.Services.AddDbContext<JogoContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 var app = builder.Build();
 
 // CRUD - Jogadores
-
-
 app.MapGet("/jogadores", async (JogoContext db) =>
 {
     var jogadores = await db.Jogadores
@@ -24,7 +21,6 @@ app.MapGet("/jogadores", async (JogoContext db) =>
         .ToListAsync();
     return await db.Jogadores.ToListAsync();
 });
-
 
 app.MapGet("/jogador/{id:int}", async (int id, JogoContext db) =>
 {
@@ -228,20 +224,8 @@ app.MapGet("/cenario4", () =>
             </form>
 </body>
 </html>";
-
-
-
-
     return Results.Text(html, "text/html"); 
 });
-
-
-
-
-
-
-
-
 
 //Cenário 5
 app.MapGet("/cenario5", () => 
@@ -264,13 +248,8 @@ app.MapGet("/cenario5", () =>
             </form>
 </body>
 </html>";
-
-
-
-
     return Results.Text(html, "text/html"); 
 });
-
 
 //Cenário 6
 app.MapGet("/CenarioFinalRuim", () => 
@@ -293,14 +272,8 @@ app.MapGet("/CenarioFinalRuim", () =>
             </form>
 </body>
 </html>";
-
-
-
-
     return Results.Text(html, "text/html"); 
 });
-
-
 
 app.MapGet("/Final: Ruim", () =>
 {
@@ -320,8 +293,6 @@ app.MapGet("/Final: Ruim", () =>
     return Results.Text(html, "text/html");
 });
 
-
-
 app.MapGet("/Final: Bom", () =>
 {
     var html = @"
@@ -339,13 +310,6 @@ app.MapGet("/Final: Bom", () =>
 </html>";
     return Results.Text(html, "text/html");
 });
-
-
-
-
-
-
-
 
 app.MapGet("/Final: Morte", () =>
 {
