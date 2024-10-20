@@ -9,8 +9,6 @@ var app = builder.Build();
 app.MapGet("/", () => 
 {
     var cenario = Cenario1();
-
-
     var html = $@"
     <!DOCTYPE html>
 <html lang='en'>
@@ -28,7 +26,7 @@ app.MapGet("/", () =>
             </form>
 </body>
 </html>";
-    return Results.Text(html, "text/html"); // Retorna o HTML com o tipo de conteúdo correto
+    return Results.Text(html, "text/html"); 
 });
 
 
