@@ -21,11 +21,41 @@ namespace API.Models
         {
             if (escolha == Opcao1)
             {
-                return "Nada acontece.";
+                var html = $@"
+    <!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Minha Aplicação ASP.NET</title>
+</head>
+<body>
+<p>Nada acontece.</p>
+            <form action='' method='get'>
+            <button type='submit'>Continuar jogo</button>
+        </form>    
+</body>
+</html>";
+                return html;
             }
             else if (escolha == Opcao2)
             {
-                return " Voce acaba voltando para a direção na qual veio e acha um maldito monstro, com grandes dificuldades voce acaba sendo mordido pelo monstro, mas o mata estando livre para se decidir se opta por chegar a nave ou não";
+                var html = $@"
+    <!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Minha Aplicação ASP.NET</title>
+</head>
+<body>
+<p>Voce acaba voltando para a direção na qual veio e acha um maldito monstro, com grandes dificuldades voce acaba sendo mordido pelo monstro, mas o mata estando livre para se decidir se opta por chegar a nave ou não.</p>
+            <form action='' method='get'>
+            <button type='submit'>Continuar jogo</button>
+        </form>    
+</body>
+</html>";
+                return html;
             }
             else
             {

@@ -9,19 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjetoJogo
 build_property.RootNamespace = ProjetoJogo
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\filip\OneDrive\Área de Trabalho\desenvolvimento de software visual\Projeto jogo\ProjetoJogo\
-=======
-build_property.ProjectDir = D:\Guilherme Ami\Projeto-Jogo\ProjetoJogo\
->>>>>>> 03b28dc05ec142d9320d66508f94461f32c40461
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\filip\OneDrive\Área de Trabalho\desenvolvimento de software visual\Projeto jogo\ProjetoJogo
-=======
-build_property.MSBuildProjectDirectory = D:\Guilherme Ami\Projeto-Jogo\ProjetoJogo
->>>>>>> 03b28dc05ec142d9320d66508f94461f32c40461
 build_property._RazorSourceGeneratorDebug = 
