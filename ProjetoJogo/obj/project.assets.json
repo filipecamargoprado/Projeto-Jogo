@@ -2381,19 +2381,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\arthu\\.nuget\\packages\\": {}
+    "C:\\Users\\amigu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\apicfg\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj",
+      "projectUniqueName": "D:\\Guilherme Ami\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj",
       "projectName": "ProjetoJogo",
-      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\apicfg\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj",
-      "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\apicfg\\Projeto-Jogo\\ProjetoJogo\\obj\\",
+      "projectPath": "D:\\Guilherme Ami\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj",
+      "packagesPath": "C:\\Users\\amigu\\.nuget\\packages\\",
+      "outputPath": "D:\\Guilherme Ami\\Projeto-Jogo\\ProjetoJogo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\amigu\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2452,7 +2452,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
