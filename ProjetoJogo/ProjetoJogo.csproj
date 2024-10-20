@@ -8,12 +8,12 @@
 
   <ItemGroup>
     <Compile Remove="Models\AppdbContext.cs" />
-    <Compile Remove="Models\cenario5.cs" />
+    <Compile Remove="Models\CenarioFinalBom.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Models\AppdbContext.cs" />
-    <None Include="Models\cenario5.cs" />
+    <None Include="Models\CenarioFinalBom.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -4,17 +4,15 @@ using API.Models;
 
 namespace API.Models
 {
-    public class Cenario3
+    public class Cenario5
     {
         public string Descricao { get; set; }
         public string Opcao1 { get; set; }
-        public string Opcao2 { get; set; }
 
-        public Cenario3()
+        public Cenario5()
         {
-            Descricao = "Você silenciosamente entra em uma casa abandonada onde encontra uma barra de ferro e se";
-            Opcao1 = "Tentar arrombar a porta";
-            Opcao2 = "Voltar para outra direção";
+            Descricao = "Você silenciosamente entra em uma casa abandonada onde encontra uma barra de ferro e encontra um monstro que está preste a te atacar";
+            Opcao1 = "Executar monstro";
         }
 
         public string EscolherOpcao(string escolha)
@@ -31,25 +29,6 @@ namespace API.Models
 </head>
 <body>
 <p>Nada acontece.</p>
-            <form action='' method='get'>
-            <button type='submit'>Continuar jogo</button>
-        </form>    
-</body>
-</html>";
-                return html;
-            }
-            else if (escolha == Opcao2)
-            {
-                var html = $@"
-    <!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>Minha Aplicação ASP.NET</title>
-</head>
-<body>
-<p>Voce acaba voltando para a direção na qual veio e acha um maldito monstro, com grandes dificuldades voce acaba sendo mordido pelo monstro, mas o mata estando livre para se decidir se opta por chegar a nave ou não.</p>
             <form action='' method='get'>
             <button type='submit'>Continuar jogo</button>
         </form>    
