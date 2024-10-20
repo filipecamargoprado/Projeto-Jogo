@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\filip\\OneDrive\\Área de Trabalho\\desenvolvimento de software visual\\Projeto jogo\\ProjetoJogo\\ProjetoJogo.csproj": {}
+    "C:\\Users\\arthu\\OneDrive\\Documentos\\apicfg\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\filip\\OneDrive\\Área de Trabalho\\desenvolvimento de software visual\\Projeto jogo\\ProjetoJogo\\ProjetoJogo.csproj": {
+    "C:\\Users\\arthu\\OneDrive\\Documentos\\apicfg\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Área de Trabalho\\desenvolvimento de software visual\\Projeto jogo\\ProjetoJogo\\ProjetoJogo.csproj",
+        "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\apicfg\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj",
         "projectName": "ProjetoJogo",
-        "projectPath": "C:\\Users\\filip\\OneDrive\\Área de Trabalho\\desenvolvimento de software visual\\Projeto jogo\\ProjetoJogo\\ProjetoJogo.csproj",
-        "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\filip\\OneDrive\\Área de Trabalho\\desenvolvimento de software visual\\Projeto jogo\\ProjetoJogo\\obj\\",
+        "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\apicfg\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj",
+        "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\apicfg\\Projeto-Jogo\\ProjetoJogo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
