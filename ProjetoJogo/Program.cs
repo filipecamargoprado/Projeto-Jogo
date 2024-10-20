@@ -9,11 +9,6 @@ var app = builder.Build();
 app.MapGet("/", () => 
 {
     var cenario = new Cenario1();
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 03b28dc05ec142d9320d66508f94461f32c40461
     var html = $@"
     <!DOCTYPE html>
 <html lang='en'>

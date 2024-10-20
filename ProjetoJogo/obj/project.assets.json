@@ -2381,24 +2381,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\amigu\\.nuget\\packages\\": {}
+    "C:\\Users\\filip\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Guilherme Ami\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj",
+      "projectUniqueName": "C:\\Users\\filip\\OneDrive\\Área de Trabalho\\desenvolvimento de software visual\\Projeto jogo\\ProjetoJogo\\ProjetoJogo.csproj",
       "projectName": "ProjetoJogo",
-      "projectPath": "D:\\Guilherme Ami\\Projeto-Jogo\\ProjetoJogo\\ProjetoJogo.csproj",
-      "packagesPath": "C:\\Users\\amigu\\.nuget\\packages\\",
-      "outputPath": "D:\\Guilherme Ami\\Projeto-Jogo\\ProjetoJogo\\obj\\",
+      "projectPath": "C:\\Users\\filip\\OneDrive\\Área de Trabalho\\desenvolvimento de software visual\\Projeto jogo\\ProjetoJogo\\ProjetoJogo.csproj",
+      "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\filip\\OneDrive\\Área de Trabalho\\desenvolvimento de software visual\\Projeto jogo\\ProjetoJogo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\amigu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2452,7 +2454,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
