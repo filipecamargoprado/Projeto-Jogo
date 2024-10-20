@@ -8,7 +8,7 @@ var app = builder.Build();
 // Rota inicial que retorna um HTML simples
 app.MapGet("/", () => 
 {
-    var cenario = Cenario1();
+    var cenario = new Cenario1();
 
 
     var html = $@"
@@ -45,3 +45,4 @@ app.MapPost("/escolher", async (HttpContext context) =>
 
 
 app.Run();
+
