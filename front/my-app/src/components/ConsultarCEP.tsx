@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
 function ConsultarCEP() {
-  const [localidade, setLocalidade] = useState("");
-  const [estado, setEstado] = useState("");
-  const [logradouro, setLogradouro] = useState("");
+  const [localidade, setlocalidade] = useState("");
+  const [estado, setestado] = useState("");
+  const [logradouro, setlogradouro] = useState("");
   const [cep, setCep] = useState("");
 
   useEffect(() => {
@@ -30,9 +30,16 @@ function ConsultarCEP() {
     fetch("https://viacep.com.br/ws/" + cep + "/json/")
       .then((resposta) => resposta.json())
       .then((endereco) => {
-        digitarGradualmente(endereco.localidade, setLocalidade);
-        digitarGradualmente(endereco.logradouro, setLogradouro);
-        digitarGradualmente(endereco.uf, setEstado);
+        console.log(endereco); // Adicione esta linha para verificar a resposta
+        if (endereco.localidade) {
+          digitarGradualmente(endereco.localidade, setlocalidade);
+        }
+        if (endereco.logradouro) {
+          digitarGradualmente(endereco.logradouro, setlogradouro);
+        }
+        if (endereco.uf) {
+          digitarGradualmente(endereco.uf, setestado)
+        }
       });
   }
 
@@ -51,7 +58,6 @@ function ConsultarCEP() {
   return (
     <div id="consultar_cep">
       <h1>Consultar CEP</h1>
-
       <input
         type="text"
         placeholder="Digite o seu CEP"

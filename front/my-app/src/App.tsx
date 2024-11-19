@@ -1,12 +1,13 @@
 import React from "react";
-import ConsultarCEP from "./models/ConsultarCEP";
+import ConsultarCEP from "./components/ConsultarCEP";
+import ComputerInterface from "./components/ComputerInterface";
 // import ProdutoListar from "./models/ProdutoListar";
 // import Pro dutoCadastrar from "./models/ProdutoCadastrar";
 
 function App() {
   return (
     <div>
-      <ConsultarCEP/>
+      <ComputerInterface/>
     </div>
   );
 }
